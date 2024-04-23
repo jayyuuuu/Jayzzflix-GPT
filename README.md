@@ -12,6 +12,8 @@
 - Create SignUp User Account.
 - Implement Sign In User Api
 - Created Redux Store with UserSlice.
+- Implemented Sign out.
+- Update profile with APIs.
 
 # Features
 
