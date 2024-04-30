@@ -2,17 +2,17 @@ import React from "react";
 
 const VideoTitle = ({ title, overview }) => {
   return (
-    <div className="pt-36 px-12">
+    <div className="w-screen aspect-video pt-[20%] px-12 absolute text-white bg-gradient-to-r from-black">
       <h1 className="text-5xl font-bold">{title}</h1>
       <p className="w-2/5 pt-3">{overview}</p>
-      <div className="my-2">
-        <button className=" mr-4 border border-black font-semibold px-4 py-1 bg-white text-black rounded-sm    ">
+      <div className="mt-8">
+        <button className=" mr-4 border border-black font-semibold px-5 py-3 bg-white text-black rounded-sm  hover:bg-opacity-80  ">
           <svg
-            class="h-6 w-6 text-black inline-flex"
+            className="h-6 w-6 text-black inline-flex"
             viewBox="0 2 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="5"
+            strokeWidth="5"
             // stroke-linecap="round"
             // stroke-linejoin="round"
           >
@@ -20,15 +20,15 @@ const VideoTitle = ({ title, overview }) => {
           </svg>{" "}
           Play
         </button>
-        <button className=" mr-4 border text-white font-semibold border-black px-4 py-1 bg-gray-400 rounded-sm ">
+        <button className=" mr-4 border text-white font-semibold border-black px-5 py-3 bg-gray-400 rounded-sm hover:bg-opacity-80">
           <svg
-            class="h-6 w-6 text-white inline-flex mr-2"
+            className="h-6 w-6 text-white inline-flex mr-2"
             viewBox="0 1 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
             {" "}
             <circle cx="12" cy="12" r="10" />{" "}
