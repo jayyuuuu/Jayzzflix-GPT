@@ -4,7 +4,6 @@ import useMovieTrailer from "../hooks/useMovieTrailer";
 const VideoBackground = ({ movieId }) => {
   // const [trailerId, setTrailerId] = useState(null);
   const trailerVideo = useSelector((store) => store.movies?.trailerVideo);
-
   useMovieTrailer(movieId);
   return (
     <div className="w-screen">
@@ -16,7 +15,7 @@ const VideoBackground = ({ movieId }) => {
           "?&autoplay=1&mute=1"
         }
         title="YouTube video player"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share fullscreen"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share fullScreen"
       ></iframe>
     </div>
   );
