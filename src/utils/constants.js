@@ -1,5 +1,5 @@
-export const LOGO =
-  "https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png";
+import logo from "../images/jayzflix-logo.png";
+export const LOGO = logo;
 export const USER_AVATAR =
   "https://avatars.githubusercontent.com/u/70216818?v=4";
 
@@ -7,8 +7,7 @@ export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNjBiNzRlNmRiMjlkNjRjZWQ1NmRjMDk0NDE3NDY5YyIsInN1YiI6IjY2MmE3MWYyNTBmN2NhMDBiNmM4OTU4YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.lb7RC-Ippy9_Zti3addBsx52GgWv6X_tnV9ZecBp4T0",
+    Authorization: "Bearer " + process.env.REACT_APP_TMDB_KEY,
   },
 };
 
@@ -22,3 +21,5 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "hindi", name: "Hindi" },
   { identifier: "spanish", name: "Spanish" },
 ];
+
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;

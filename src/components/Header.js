@@ -55,13 +55,17 @@ const Header = () => {
   };
 
   return (
-    <div className="w-full flex justify-between px-8 py-2 bg-gradient-to-b from-black absolute z-10">
-      <img className="w-52 " src={LOGO} alt="logo" />
+    <div className="w-full flex flex-col text-xs md:text-sm md:flex-row  md:justify-between px-2 md:px-8 py-2 bg-gradient-to-b from-black absolute z-10">
+      <img
+        className=" w-36 mx-auto h-24 md:mx-0 flex justify-center md:w-52 "
+        src={LOGO}
+        alt="logo"
+      />
       {user && (
-        <div className="flex p-4">
+        <div className="flex -mt-2 md:mt-0 md:p-4 justify-center">
           {showGptSearch && (
             <select
-              className=" p-2 px-4 m-2 bg-gray-600 text-white"
+              className=" md:p-2 px-1 md:px-4 my-2 bg-gray-600 text-white"
               onChange={handleLanguageChange}
             >
               {SUPPORTED_LANGUAGES.map((lang) => (
@@ -72,14 +76,14 @@ const Header = () => {
             </select>
           )}
           <button
-            className="p-2 px-4 m-2 mx-4 rounded-md text-white bg-purple-800"
+            className=" md:p-2 px-2 md:px-4 m-2 md:mx-4 rounded-md text-white bg-purple-800"
             onClick={handleGptSearchClick}
           >
             {!showGptSearch ? "GPT Search" : "Homepage"}
           </button>
 
           <img
-            className="p-1 m-1 w-12 h-12 rounded-md "
+            className=" p-2 md:m-1  w-12 h-12 rounded-md "
             alt="usericon"
             src={user?.photoURL}
           />
