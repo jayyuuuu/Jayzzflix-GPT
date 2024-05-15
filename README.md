@@ -1,4 +1,4 @@
-# Netflix GPT
+# Jayzzflix GPT
 
 - Create react app.
 - Configure tailwind.
